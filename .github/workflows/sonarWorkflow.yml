@@ -17,4 +17,4 @@ jobs:
       run: mvn clean install
 
     - name: Run SonarQube Analysis
-      run: mvn sonar:sonar -Dsonar.host.url=http://172.17.0.2:9000 -Dsonar.login=${{ secrets.SONARQUBE_TOKEN }} -Dsonar.projectKey=demoSonar
+      run: mvn sonar:sonar -Dsonar.host.url=http://172.17.0.2:9092 -Dsonar.login=${{ secrets.SONARQUBE_TOKEN }} -Dsonar.projectKey=demoSonar
